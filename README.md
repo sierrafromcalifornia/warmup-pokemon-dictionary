@@ -23,6 +23,16 @@ with open('./data/pokemon.json', 'r') as fp:
     data = json.load(fp)
 ```
 
+
+```python
+#__SOLUTION__
+
+import json
+
+with open('./data/pokemon.json', 'r') as fp:
+    data = json.load(fp)
+```
+
 Joél has caught the following pokemon.
 - Bayleef 
 - Haunter
@@ -34,6 +44,13 @@ In the cell below, we create a list called ```joels_pokemon_names``` containing 
 
 
 ```python
+joels_pokemon_names = ['Bayleef', 'Haunter', 'Poliwag', 'Pidgeotto', 'Kadabra']
+```
+
+
+```python
+# __SOLUTION__
+
 joels_pokemon_names = ['Bayleef', 'Haunter', 'Poliwag', 'Pidgeotto', 'Kadabra']
 ```
 
@@ -74,6 +91,16 @@ test = CheckDictionary(joels_pokemon)
 test.run()
 ```
 
+
+```python
+#__SOLUTION__
+
+from tests import CheckDictionary
+
+test = CheckDictionary(joels_pokemon)
+test.run()
+```
+
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
 
 **Bayleef** is Joél's strongest pokemon. Let's create a list of all Pokemon that Bayleef is weak against.
@@ -101,6 +128,13 @@ We'll have you code steps 3-5!
 bayleef_weakness_scores = data['Bayleef']['weakness']
 ```
 
+
+```python
+#__SOLUTION__
+
+bayleef_weakness_scores = data['Bayleef']['weakness']
+```
+
 **Step 2:** Identify any type that has a weakness score of 2 and appending those types to a list called ```weakness_types```
 
 
@@ -113,6 +147,19 @@ We do this by:
 
 
 ```python
+weakness_types = []
+
+for weakness in bayleef_weakness_scores.keys():
+    if bayleef_weakness_scores[weakness] == 2:
+        weakness_types.append(weakness)
+        
+weakness_types
+```
+
+
+```python
+#__SOLUTION__
+
 weakness_types = []
 
 for weakness in bayleef_weakness_scores.keys():
@@ -159,5 +206,9 @@ test.run()
 
 
 ```python
+#__SOLUTION__
 
+from tests import ListCheck
+test = ListCheck(bayleef_weakness)
+test.run()
 ```
