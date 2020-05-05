@@ -43,9 +43,10 @@ for pokemon in joels_pokemon_names:
     joels_pokemon[pokemon] = data[pokemon]
 ```
 
-Run the cell below to see if you successfully made the my_pokemon dictionary!
+Run the cell below to see if you successfully made the joels_pokemon dictionary!
 
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
+
 **Bayleef** is Joél's strongest pokemon. Let's create a list of all Pokemon that Bayleef is weak against.
 
 *Weakness* is measured with the ```weakness``` key in our data. If the weakness value = 2, that means the pokemon is extremely weak to that type of pokemon. 
