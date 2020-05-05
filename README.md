@@ -64,14 +64,6 @@ test = CheckDictionary(joels_pokemon)
 test.run()
 ```
 
-
-# ✅ Your dictionary passed 2 out of 2 tests!
-
->✅ *Dictionary Keys are correct!*
-
->✅ *Dictionary data are correct!*
-
-
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
 **Bayleef** is Joél's strongest pokemon. Let's create a list of all Pokemon that Bayleef is weak against.
 
@@ -119,13 +111,6 @@ for weakness in bayleef_weakness_scores.keys():
 weakness_types
 ```
 
-
-
-
-    ['ice', 'poison', 'bug', 'fire', 'flying']
-
-
-
 Bayleef is weak to ice, poison, bug, fire, and flying pokemon. 
 
 
@@ -146,14 +131,6 @@ from tests import ListCheck
 test = ListCheck(bayleef_weakness)
 test.run()
 ```
-
-
-# Your list passed 2 out of 2 tests!
-
->✅ *List length is correct!*
-
->✅ *List data are correct*
-
 
 
 ```python
