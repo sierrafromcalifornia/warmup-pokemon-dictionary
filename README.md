@@ -15,6 +15,15 @@ Let's use our dictionary parsing skills to help Joél out!
 
 For now, just run the cell :)
 
+
+```python
+
+import json
+
+with open('./data/pokemon.json', 'r') as fp:
+    data = json.load(fp)
+```
+
 Joél has caught the following pokemon.
 - Bayleef 
 - Haunter
@@ -23,6 +32,12 @@ Joél has caught the following pokemon.
 - Kadabra
 
 In the cell below, we create a list called ```joels_pokemon_names``` containing each of his pokemon's names.
+
+
+```python
+
+joels_pokemon_names = ['Bayleef', 'Haunter', 'Poliwag', 'Pidgeotto', 'Kadabra']
+```
 
 ## Coding time:
 
@@ -44,6 +59,15 @@ for pokemon in joels_pokemon_names:
 ```
 
 Run the cell below to see if you successfully made the joels_pokemon dictionary!
+
+
+```python
+
+from tests import CheckDictionary
+
+test = CheckDictionary(joels_pokemon)
+test.run()
+```
 
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
 
@@ -67,6 +91,12 @@ We'll have you code steps 3-5!
 
 **Step 1:** Isolate Bayleef's weakness data from our dictionary
 
+
+```python
+
+bayleef_weakness_scores = data['Bayleef']['weakness']
+```
+
 **Step 2:** Identify any type that has a weakness score of 2 and appending those types to a list called ```weakness_types```
 
 
@@ -76,6 +106,18 @@ We do this by:
     - Each key is a pokemon type
 3. Checking if the score equals 2
 4. Appending the key to our empty list if the score equals 2
+
+
+```python
+
+weakness_types = []
+
+for weakness in bayleef_weakness_scores.keys():
+    if bayleef_weakness_scores[weakness] == 2:
+        weakness_types.append(weakness)
+        
+weakness_types
+```
 
 Bayleef is weak to ice, poison, bug, fire, and flying pokemon. 
 
@@ -98,3 +140,11 @@ bayleef_weakness = list(bayleef_weakness)
 ```
 
 Run the cell below to test your code! ⬇️
+
+
+```python
+
+from tests import ListCheck
+test = ListCheck(bayleef_weakness)
+test.run()
+```
