@@ -124,9 +124,11 @@ weakness_types
 Bayleef is weak to ice, poison, bug, fire, and flying pokemon. 
 
 
-**Now your turn.** In the cell below, use the weakness_types list to identify pokemon that have one of those types.
+**Now your turn.** In the cell below, use the weakness_types list to identify pokemon that have one of those types, and append those pokemon to a list named ```bayleef_weakness```. 
 
 >**Hint** The code will be very similar to the code for step 2.
+
+>**Hint** Make sure your list doesn't contain duplicates of the same pokemon!
 
 
 ```python
