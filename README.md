@@ -66,7 +66,7 @@ test.run()
 
 **Bayleef** is Joél's strongest pokemon. Let's create a list of all Pokemon that Bayleef is weak against.
 
-Our dictionary gives us the *Types* of pokemon Bayleef is weak to. Our dictionary also gives us the type of each pokemon. So first we have to figure out what types of pokemon Bayleef is weak to, then grab every pokemon that has that type.
+Our dictionary gives us the *Types* of pokemon Bayleef is weak to. Our dictionary also gives us the type for each pokemon. So first we have to figure out what types of pokemon Bayleef is weak to, then grab every pokemon that has that type.
 
 **Ok, here is how we will do it.**
 
