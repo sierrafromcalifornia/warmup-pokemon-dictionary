@@ -37,13 +37,13 @@ joels_pokemon_names = ['Bayleef', 'Haunter', 'Poliwag', 'Pidgeotto', 'Kadabra']
 
 ## Coding time:
 
-Let's create a new dictionary called ```my_pokemon```. 
+Let's create a new dictionary called ```joels_pokemon```. 
 
 To do this, we will:
-1. Create an empty dictionary called ```my_pokemon```
+1. Create an empty dictionary called ```joels_pokemon```
 2. Loop over the names in the ```joels_pokemon_names``` list
 3. Use the name to access the pokemon's information in the ```data``` dictionary
-4. Add the pokemon name to the ```my_pokemon``` dictionary as a ```key``` and the pokemon's information as the key's ```value```
+4. Add the pokemon name to the ```joels_pokemon``` dictionary as a ```key``` and the pokemon's information as the key's ```value```
 
 
 ```python
@@ -61,6 +61,14 @@ from tests import CheckDictionary
 test = CheckDictionary(joels_pokemon)
 test.run()
 ```
+
+
+# ✅ Your dictionary passed 2 out of 2 tests!
+
+>✅ *Dictionary Keys are correct!*
+
+>✅ *Dictionary data are correct!*
+
 
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
 
