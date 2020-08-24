@@ -1,4 +1,3 @@
-
 <center> <h1>Pokemon/Dictionary Warmup</h1> </center>
 
 ![Pokeball](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvFguv_4hYhwny0d7KdBcFYHYCZ0j2uEBtr3aYmJHqNKecqEsi&usqp=CAU)
@@ -16,18 +15,21 @@ Let's use our dictionary parsing skills to help Joél out!
 
 ```python
 import json
+import os
 
-with open('./data/pokemon.json', 'r') as fp:
+path = os.path.join('data', 'pokemon.json')
+with open(path, 'r') as fp:
     data = json.load(fp)
 ```
 
 
 ```python
 #__SOLUTION__
-
 import json
+import os
 
-with open('./data/pokemon.json', 'r') as fp:
+path = os.path.join('data', 'pokemon.json')
+with open(path, 'r') as fp:
     data = json.load(fp)
 ```
 
@@ -90,14 +92,6 @@ test.run()
 ```
 
 
-# ✅ Your dictionary passed 2 out of 2 tests!
-
->✅ *Dictionary Keys are correct!*
-
->✅ *Dictionary data are correct!*
-
-
-
 ```python
 #__SOLUTION__
 
@@ -106,6 +100,14 @@ from tests import CheckDictionary
 test = CheckDictionary(joels_pokemon)
 test.run()
 ```
+
+
+# ✅ Your dictionary passed 2 out of 2 tests!
+
+>✅ *Dictionary Keys are correct!*
+
+>✅ *Dictionary data are correct!*
+
 
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
 
@@ -179,6 +181,13 @@ for weakness in bayleef_weakness_scores.keys():
 weakness_types
 ```
 
+
+
+
+    ['ice', 'poison', 'bug', 'fire', 'flying']
+
+
+
 Bayleef is weak to ice, poison, bug, fire, and flying pokemon. 
 
 
@@ -223,4 +232,17 @@ test.run()
 from tests import ListCheck
 test = ListCheck(bayleef_weakness)
 test.run()
+```
+
+
+# Your list passed 2 out of 2 tests!
+
+>✅ *List length is correct!*
+
+>✅ *List data are correct*
+
+
+
+```python
+
 ```
