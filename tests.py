@@ -2,8 +2,11 @@ from IPython.display import display, Markdown
 import math
 import json
 import pickle
+import os
 
-with open('./data/dictionary.json', 'r') as fp:
+answer_path = os.path.join('data','dictionary.json')
+
+with open(answer_path, 'r') as fp:
     answer = json.load(fp)
     
 class CheckDictionary():
@@ -72,8 +75,8 @@ class CheckDictionary():
         self.check_values()
         self.results()
         
-        
-with open("./data/list.txt", "rb") as fp:   # Unpickling
+list_path = os.path.join('data', 'list.txt')       
+with open(list_path, "rb") as fp:   # Unpickling
     list_test = pickle.load(fp)
 
 class ListCheck():
