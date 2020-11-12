@@ -145,9 +145,38 @@ class ListCheck():
             
         md = Markdown(md)
         display(md)
+        
             
     def run(self):
         self.check_length()
         self.compare_lists()
         self.results()
+        
+        
+class VariableAssignment:
+    
+        def run(self, pokemon_count, trainer_level,
+                coolest_pokemon, favorite_pokemon, 
+                hours_per_day, joels_pokemon_names):
+            assert type(pokemon_count) == int, '❌ pokemon_count has the wrong datatype.'
+            assert type(trainer_level) == str, '❌ trainer_level has the wrong datatype.'
+            assert type(coolest_pokemon) == str, '❌ coolest_pokemon has the wrong datatype.'
+            assert type(favorite_pokemon) == str, '❌ favorite_pokemon has the wrong datatype.'
+            assert type(hours_per_day) == float, '❌ hours_per_day has the wrong datatype.'
+            assert type(joels_pokemon_names) == list, 'joels_pokemon_names has the wrong datatype.'
+
+            assert pokemon_count == 5, '❌ pokemon_count was set to the wrong number.'
+            assert trainer_level.strip().lower() == 'apprentice', '❌ trainer_level has the wrong value.'
+            assert trainer_level == 'Apprentice', '❌ trainer_level is formatted incorrectly.'
+            assert coolest_pokemon.strip().lower() == 'haunter', '❌ coolest_pokemon has the wrong value.'
+            assert coolest_pokemon == 'Haunter', '❌ coolest_pokemon is formatted incorrectly.'
+            assert favorite_pokemon.strip().lower() == 'kadabra', '❌ favorite_pokemon has the wrong value.'
+            assert favorite_pokemon == 'Kadabra', '❌ favorite_pokemon is formatted incorrectly.'
+            assert joels_pokemon_names == ['Bayleef', 'Haunter', 'Poliwag', 'Pidgeotto', 'Kadabra'], '❌ joels_pokemon_names has the wrong values.'
+            
+            print('✅ All tests were passed!')
+        
+        
+        
+
             
