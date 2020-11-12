@@ -134,6 +134,9 @@ test.run(pokemon_count, trainer_level,
         hours_per_day, joels_pokemon_names)
 ```
 
+    ✅ All tests were passed!
+
+
 # Looping
 
 Looping is the bread and butter of code. Code is powerful because of it's speed and is especially skilled at completing repetitive tasks. 
@@ -155,6 +158,13 @@ for name in joels_pokemon_names:
     print(name)
 
 ```
+
+    Bayleef
+    Haunter
+    Poliwag
+    Pidgeotto
+    Kadabra
+
 
 ### Looping over a dictionary
 
@@ -265,6 +275,14 @@ test = CheckDictionary(joels_pokemon)
 test.run()
 ```
 
+
+# ✅ Your dictionary passed 2 out of 2 tests!
+
+>✅ *Dictionary Keys are correct!*
+
+>✅ *Dictionary data are correct!*
+
+
 # Visualization
 
 Let's figure out which pokemon is Joél's strongest pokemon!
@@ -290,6 +308,10 @@ names = list(joels_pokemon)
 plt.bar(names, attack_stats)
 plt.title("Joél's pokemon stats");
 ```
+
+
+![png](index_files/index_41_0.png)
+
 
 **What if we wanted to sort the graph?**
 
@@ -317,6 +339,10 @@ names = list(sorted_dict)
 plt.bar(names, attack_stats)
 plt.title("Joél's pokemon stats");
 ```
+
+
+![png](index_files/index_44_0.png)
+
 
 ![](https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/styles/300h/public/2019-08/pm0153_00_bayleaf_256.ktx.png?itok=Tr7OMsm1)
 
@@ -388,6 +414,13 @@ for weakness in bayleef_weakness_scores.keys():
 weakness_types
 ```
 
+
+
+
+    ['ice', 'poison', 'bug', 'fire', 'flying']
+
+
+
 Bayleef is weak to ice, poison, bug, fire, and flying pokemon. 
 
 
@@ -432,4 +465,17 @@ test.run()
 from tests import ListCheck
 test = ListCheck(bayleef_weakness)
 test.run()
+```
+
+
+# Your list passed 2 out of 2 tests!
+
+>✅ *List length is correct!*
+
+>✅ *List data are correct*
+
+
+
+```python
+
 ```
